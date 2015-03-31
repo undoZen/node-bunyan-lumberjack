@@ -31,8 +31,8 @@
   "dependencies": {
     "lumberjack-protocol": "^0.1.3"
   },
-  "peerDependencies": {
-    "bunyan": "*"
+  "devDependencies": {
+    "coffee-script": "*"
   },
   "engines": {
     "node": ">=0.10.1"

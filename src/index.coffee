@@ -3,13 +3,14 @@
 lumberjack = require 'lumberjack-protocol'
 bunyan     = require 'bunyan'
 
-LEVELS = do ->
-    answer = {}
-
-    ['trace', 'debug', 'info', 'warn', 'error', 'fatal'].forEach (level) ->
-        answer[bunyan[level.toUpperCase()]] = level
-
-    return answer
+LEVELS = {
+    10: 'trace'
+    20: 'debug'
+    30: 'info'
+    40: 'warn'
+    50: 'error'
+    60: 'fatal'
+}
 
 # Shallow clone
 clone = (obj) ->
