@@ -1,3 +1,5 @@
+This is a fork by undoZen for bunyah-hub, I only change it to use entry.app as application name by default. Other remains the same.
+
 What is it?
 ===========
 

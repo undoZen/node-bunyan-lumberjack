@@ -40,6 +40,7 @@ class BunyanLumberjackStream extends Writable
         entry = clone(entry)
 
         host = entry.hostname ? @_host
+        app = entry.app ? @_application
 
         # Massage the entry to look like a logstash entry.
         bunyanLevel = entry.level
@@ -56,7 +57,7 @@ class BunyanLumberjackStream extends Writable
 
         # Add some extra fields
         entry.tags ?= @_tags
-        entry.source = "#{host}/#{@_application}"
+        entry.source = "#{host}/#{app}"
 
         dataFrame = {
             line: JSON.stringify(entry)

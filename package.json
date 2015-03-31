@@ -1,5 +1,5 @@
 {
-  "name": "bunyan-lumberjack",
+  "name": "bunyan-hub-lumberjack",
   "description": "Send bunyan logs to logstash using the lumberjack protocol.",
   "keywords": [
     "bunyan",
